@@ -1,0 +1,88 @@
+#include <iostream.h>
+#include <conio.h>
+
+main(){
+
+int q,menucode,totalprice;
+char yt;
+
+awal:
+cout<<"1. JOG - JKT"<<endl;
+cout<<"2. JOG - SBY"<<endl;
+cout<<"3. JOG - SOLO"<<endl;
+cout<<"4. JOG - SMG"<<endl;
+cout<<"5. JOG - MGL"<<endl;
+cout<<"6. JOG - PWRJ"<<endl;
+cout<<"7. JOG - BALI"<<endl;
+cout<<"8. JOG - PACITAN"<<endl;
+cout<<"9. JOG - BOGOR"<<endl;
+cout<<"10. JOG - MALANG"<<endl;
+cout<<"Masukan  Kode Tiket : ";
+cin>>menucode;
+cout<<"Masukan Jumlah : ";
+cin>>q;
+
+switch(menucode)
+{
+case 1:
+totalprice=q*250000;
+cout<<" Total : "<<totalprice<<" ";
+break;
+
+case 2:
+totalprice=q*150000;
+cout<<" Total : "<<totalprice<<" ";
+break;
+
+case 3:
+totalprice=q*50000;
+cout<<" Total : "<<totalprice<<" ";
+break;
+
+case 4:
+totalprice=q*60000;
+cout<<" Total : "<<totalprice<<" ";
+break;
+
+case 5:
+totalprice=q*30000;
+cout<<" Total : "<<totalprice<<" ";
+break;
+
+case 6:
+totalprice=q*80000;
+cout<<" Total : "<<totalprice<<" ";
+break;
+
+case 7:
+totalprice=q*275000;
+cout<<" Total : "<<totalprice<<" ";
+break;
+
+case 8:
+totalprice=q*40000;
+cout<<" Total : "<<totalprice<<" ";
+break;
+
+case 9:
+totalprice=q*160000;
+cout<<" Total : "<<totalprice<<" ";
+break;
+
+case 10:
+totalprice=q*120000;
+cout<<" Total : "<<totalprice<<" ";
+break;
+default:
+cout<<"Masukan hanya angka 1-10";
+}
+cout<<"Apakah anda ingin mengulang ? [Y/T] : ";
+cin>>yt;
+cout<<endl;
+if(yt=='Y' || yt=='y')
+{goto awal;}
+if(yt=='T' || yt=='t')
+{goto selesai;}
+selesai:
+getch();
+}

@@ -1,0 +1,116 @@
+#include <iostream.h>
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	awal:
+   system("cls");
+   float berat;
+   char nama[30],pil,pl,yt;
+cout<<"                ### Laundry Fitria ###                 "<<endl;
+    cout<<"======================================================="<<endl;
+    cout<<endl;
+    cout<<"  KODE        Kategori        Lama          Harga"<<endl;
+    cout<<"   1.        - Express       - 4 Jam        Rp.7.000"<<endl;
+    cout<<"   2.        - One Day       - 1 Hari       Rp.4.500"<<endl;
+    cout<<"   3.        - Biasa         - 3 Hari       Rp.3.000"<<endl;
+    cout<<endl;
+    cout<<"-------------------------------------------------------"<<endl;
+    masuk:
+    cout<<endl;
+    cout<<"=== Input Data ========================================"<<endl;
+    cout<<"\n Nama     : ";gets(nama);
+    cout<<" Berat    : ";cin>>berat;
+    cout<<" Kategori : ";cin>>pil;
+    cout<<"======================================================="<<endl;
+  if (pil=='1'){
+    system ("cls");
+    int harga,tot,bay,balik;
+    harga=7000;
+    tot=berat*harga;
+    cout << endl;
+    cout<<"                          ### Laundry Fitria ###       "<<endl;
+    cout<<"=== Data Pelanggan ===================================="<<endl;
+    cout<<endl;
+    cout<<"Nama      : "<<nama<<endl;
+    cout<<"Berat	  : "<<berat<<" kg"<<endl;
+    cout<<"Kategori  : Express"<<endl;
+    cout<<"Harga	  : Rp. "<<harga<<",-"<<endl;
+    cout<<"Total	  : Rp. "<<tot<<",-"<<endl;
+    cout<<"======================================================="<<endl;
+    cout<<endl;
+    cout << "-----------------------------------------------------" << endl;
+    cout<<"Uang Bayar   = Rp. ";cin>>bay;
+    balik=bay-tot;
+    cout<<"Uang Kembali = Rp. " <<balik<<",-"<< endl;
+    }
+    else if (pil=='2') {
+    system ("cls");
+    int harga,tot,bay,balik;
+    harga=4500;
+    tot=berat*harga;
+    cout << endl;
+    cout<<"                          ### Laundry Fitria ###       "<<endl;
+    cout<<"=== Data Pelanggan ===================================="<<endl;
+    cout<<endl;
+    cout<<"Nama      : "<<nama<<endl;
+    cout<<"Berat	  : "<<berat<<" kg"<<endl;
+    cout<<"Kategori  : Cepat"<<endl;
+    cout<<"Harga	  : Rp. "<<harga<<",-"<<endl;
+    cout<<"Total	  : Rp. "<<tot<<",-"<<endl;
+    cout<<"======================================================="<<endl;
+    cout<<endl;
+    cout << "-----------------------------------------------------"<<endl;
+    cout<<"Uang Bayar   = Rp. ";cin>>bay;
+    balik=bay-tot;
+    cout<<"Uang Kembali = Rp. " <<balik<<",-"<< endl;
+    }
+    else if (pil=='3') {
+    system ("cls");
+    int harga,tot,bay,balik;
+    harga=3000;
+    tot=berat*harga;
+    cout << endl;
+    cout<<"                          ### Laundry Fitria ###       "<<endl;
+    cout<<"=== Data Pelanggan ===================================="<<endl;
+    cout<<endl;
+    cout<<"Nama      : "<<nama<<endl;
+    cout<<"Berat	  : "<<berat<<" kg"<<endl;
+    cout<<"Kategori  : Cepat"<<endl;
+    cout<<"Harga	  : Rp. "<<harga<<",-"<<endl;
+    cout<<"Total	  : Rp. "<<tot<<",-"<<endl;
+    cout<<"======================================================="<<endl;
+    cout<<endl;
+    cout << "-----------------------------------------------------"<<endl;
+    cout<<"Uang Bayar   = Rp. ";cin>>bay;
+    balik=bay-tot;
+    cout<<"Uang Kembali = Rp. " <<balik<<",-"<< endl;
+    }
+    else {
+    ulang:
+    cout<<endl;
+    cout<<"--- Input Error ---------------------------------------"<<endl;
+    cout<<"Masukkan Angka 1-3 Untuk Kategori! [Y/T]"<<endl;
+    cout<<endl;
+    cout<<"Masukkan Perintah = ";
+    cin>>pl;
+    cout<<endl;
+    if(pl=='Y' || pl=='y')
+    {goto masuk;}
+    else
+    {goto ulang;}
+    }
+    cout<<endl;
+    cout<<"Apakah anda ingin mengulang ? [Y/T] : ";
+    cin>>yt;
+    cout<<endl;
+
+    if(yt=='Y' || yt=='y')
+    {goto awal;}
+    if(yt=='T' || yt=='t')
+    {goto selesai;}
+    selesai:
+
+  return 0;
+}

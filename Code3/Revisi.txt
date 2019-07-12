@@ -1,0 +1,16 @@
+Yang kurang
+- Flowchart
+- Pseuducode
+- Output Program
+- Fix Makalah
+
+
+www.draw.io "Pembuatan Flowchart"
+print 1 ----- xxx
+
+
+y kecil
+
+flowchart ditambah
+
+ditambah ke read / print
